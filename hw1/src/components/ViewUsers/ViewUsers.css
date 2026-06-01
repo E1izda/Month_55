@@ -1,0 +1,94 @@
+.view-users {
+  padding: 32px 24px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #263728;
+  min-height: 100vh;
+}
+
+.view-users__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 32px;
+  color: #61bb59;
+  letter-spacing: 0.5px;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #f1e6e6;
+  border-radius: 16px;
+  padding: 24px 20px 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-content: space-between;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.premium-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #407413, #183e14);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-top: 8px;
+}
+
+/* ===== Аватар ===== */
+.user-avatar {
+  align-self: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+  margin-bottom: 14px;
+}
+
+/* ===== Текстовая информация ===== */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.user-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 4px;
+}
+
+.user-role {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+  margin: 0;
+}
+
+.user-city,
+.user-age,
+.user-email {
+  font-size: 0.8rem;
+  color: #a0aec0;
+  margin: 0;
+}
