@@ -1,0 +1,74 @@
+h1 {
+  text-align: center;
+}
+
+.shop__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #3e370f;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card__img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__name {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 12px 0 6px;
+}
+
+.card__price {
+  color: #757c2b;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.card button {
+  margin-bottom: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #816e0f;
+  color: rgb(223, 226, 126);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card button:hover {
+  opacity: 0.85;
+}
+
+/* Корзина */
+.cart {
+  margin: 40px 20px;
+  border: 1px solid #865809;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.cart h2 {
+  margin: 0 0 16px;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #5b3005bd;
+  border-radius: 10px;
+  border-left: 4px solid #dd7e35;
+  margin-bottom: 10px;
+}
